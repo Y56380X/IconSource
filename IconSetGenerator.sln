@@ -1,8 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IconSetGenerator.Blazor", "src\IconSetGenerator.Blazor\IconSetGenerator.Blazor.csproj", "{15B9ED43-26FE-495F-A693-76F15FC246F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IconSetGenerator.Avalonia", "src\IconSetGenerator.Avalonia\IconSetGenerator.Avalonia.csproj", "{E18759B4-0076-4F0B-9E74-6FE5ED36CEF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15B9ED43-26FE-495F-A693-76F15FC246F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B9ED43-26FE-495F-A693-76F15FC246F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B9ED43-26FE-495F-A693-76F15FC246F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B9ED43-26FE-495F-A693-76F15FC246F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E18759B4-0076-4F0B-9E74-6FE5ED36CEF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E18759B4-0076-4F0B-9E74-6FE5ED36CEF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E18759B4-0076-4F0B-9E74-6FE5ED36CEF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E18759B4-0076-4F0B-9E74-6FE5ED36CEF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
