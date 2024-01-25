@@ -1,8 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IconSetGenerator.Blazor", "src\IconSetGenerator.Blazor\IconSetGenerator.Blazor.csproj", "{15B9ED43-26FE-495F-A693-76F15FC246F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IconSource.Blazor", "src\IconSource.Blazor\IconSource.Blazor.csproj", "{15B9ED43-26FE-495F-A693-76F15FC246F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IconSetGenerator.Avalonia", "src\IconSetGenerator.Avalonia\IconSetGenerator.Avalonia.csproj", "{E18759B4-0076-4F0B-9E74-6FE5ED36CEF2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IconSource.Avalonia", "src\IconSource.Avalonia\IconSource.Avalonia.csproj", "{E18759B4-0076-4F0B-9E74-6FE5ED36CEF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "[Common]", "[Common]", "{426F5EFC-0611-4DA2-A08E-8882B3510AE4}"
+	ProjectSection(SolutionItems) = preProject
+		src\IconSource.cs = src\IconSource.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
