@@ -2,11 +2,18 @@ namespace IconSource;
 
 internal static class IconSource
 {
-	public static IDictionary<string, string> GenerateCodePointMapping(string[]codePointLines)
+	public static IDictionary<string, string> GenerateCodePointMapping(IEnumerable<string> codePointLines)
 	{
-		var codePointMap = codePointLines.ToDictionary(
-			l => CodepointNameToEnumName(l.Split(' ')[0]),
-			l => l.Split(' ')[1]);
+		var codePointMap = codePointLines
+			.Select(l =>
+			{
+				var split = l.Split([' '], StringSplitOptions.RemoveEmptyEntries);
+				return split.Length == 2 ? new { Name = split[0], CodePoint = split[1] } : null;
+			})
+			.Where(s => s is not null)
+			.ToDictionary(
+			l => CodepointNameToEnumName(l.Name),
+			l => l.CodePoint);
 		return codePointMap;
 		
 		string Capitalize(string s)
