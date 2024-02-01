@@ -43,7 +43,18 @@ public class IconSourceGenerator : IIncrementalGenerator
 		{		
 		    public class Icon : TextBlock
 			{
-				public IconName IconName { get; set; }		
+				private IconName _iconName;
+				public IconName IconName
+				{ 
+					get => _iconName;
+					set
+					{
+						_iconName = value;
+						Avalonia.Application.Current.TryGetResource(_iconName.resourceKey, out var fontFamily);
+						this.FontFamily = fontFamily as Avalonia.Media.FontFamily;
+						this.Text = _iconName.codePoint;
+					}
+				}		
 			}
 		}
 		""";

@@ -1,2 +1,3 @@
-# IconSetGenerator
+# IconSource
+
 Source generator for generating icon sets from codepoint files
