@@ -11,7 +11,7 @@
         <IncludeBuildOutput>false</IncludeBuildOutput>
         
         <PackageId>IconSource.Avalonia</PackageId>
-        <Version>0.2</Version>
+        <Version>0.2.1</Version>
         <Title>IconSource.Avalonia</Title>
         <Description>Source generator for generating Avalonia UI icon sets from codepoint files.</Description>
         <Copyright>Copyright (c) 2024 Y56380X</Copyright>

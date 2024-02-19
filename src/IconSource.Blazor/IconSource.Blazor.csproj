@@ -11,7 +11,7 @@
         <IncludeBuildOutput>false</IncludeBuildOutput>
 
         <PackageId>IconSource.Blazor</PackageId>
-        <Version>0.2</Version>
+        <Version>0.2.1</Version>
         <Title>IconSource.Blazor</Title>
         <Description>Source generator for generating Blazor icon sets from codepoint files.</Description>
         <Copyright>Copyright (c) 2024 Y56380X</Copyright>
